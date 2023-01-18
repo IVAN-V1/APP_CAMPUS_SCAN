@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FRAGMENTOS.pdf"
+    android:background="@color/white"
+    >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="CARRERA"
+            android:textColorHint="@color/black"
+            android:textSize="12px"
+            app:boxBackgroundColor="#E9F2FF"
+            app:boxStrokeColor="#02060C"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout13"
+            app:startIconDrawable="@drawable/carrera"
+            app:startIconTint="@color/black"
+
+            >
+
+
+            <AutoCompleteTextView
+                android:id="@+id/completador_de_materias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout10"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="ASIGNATURA"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="#E9F2FF"
+            app:boxStrokeColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+            app:startIconDrawable="@drawable/login_persona"
+            app:startIconTint="@color/black">
+
+            <AutoCompleteTextView
+                android:id="@+id/completador_de_carreras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="27px" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout12"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+
+            android:layout_marginBottom="16dp"
+            android:hint="NOMBRE COMPLETO"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="#E9F2FF"
+            app:boxStrokeColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:startIconDrawable="@drawable/login_persona"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nombre_completo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/assets_fonts_encodesansregular"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="420dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout11"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+
+            android:layout_marginBottom="32dp"
+            android:hint="HORARIO"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="#E9F2FF"
+            app:boxStrokeColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/boton_crear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout12"
+            app:startIconDrawable="@drawable/tiempo"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/horarios"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/assets_fonts_encodesansregular"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="420dp"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="GRUPO"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="#E9F2FF"
+            app:boxStrokeColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout10"
+            app:startIconDrawable="@drawable/materia"
+            app:startIconTint="@color/black">
+
+            <AutoCompleteTextView
+                android:id="@+id/completador_de_GRUPO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="27px" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout13"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="32dp"
+
+            android:layout_marginBottom="16dp"
+            android:hint="Nombre Para El Pdf"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="#E9F2FF"
+            app:boxStrokeColor="#00050B"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@drawable/pdf_24px"
+            app:startIconTint="@color/black"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nombre_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/assets_fonts_encodesansregular"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="420dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <ImageButton
+            android:id="@+id/boton_crear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/crear_pdf"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout11" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="63dp"
+            android:layout_marginBottom="38dp"
+            android:text="SI CREAR El PDF SE ELIMINARAN LOS REGISTROS"
+            android:textAlignment="center"
+            android:textColor="#FF0505"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>

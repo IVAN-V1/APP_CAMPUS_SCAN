@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+
+
+        //se implemento para la libreria
+        maven {
+            url 'https://jitpack.io'
+        }
+
+    }
+}
+rootProject.name = "APLICACION_CAMPUS_SCAM"
+include ':app'

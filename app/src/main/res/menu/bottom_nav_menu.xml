@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/icono_lista"
+        android:icon="@drawable/lista"
+        android:title="LISTA"
+        />
+
+    <item
+        android:id="@+id/icono_escanear"
+        android:icon="@drawable/qr_code"
+        android:title="ESCANEAR QR"
+
+        />
+
+
+    <item
+        android:id="@+id/icono_crear_pdf"
+        android:icon="@drawable/pdf_24px"
+        android:title="CREAR PDF" />
+
+
+
+</menu>
