@@ -41,7 +41,9 @@ dependencies {
 
     implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
 
+
     //implementation files('libs/itextpdf-5.4.0.jar') //libreria para pdf
+
 
     implementation 'com.itextpdf:itextg:5.5.10'
     //implementation files('libs/droidText.0.4.jar' )

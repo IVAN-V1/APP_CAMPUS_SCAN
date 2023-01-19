@@ -1,16 +1,13 @@
-package com.example.aplicacion_campus_scam;
+package com.example.aplicacion_campus_scam.Actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.widget.AutoCompleteTextView;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.aplicacion_campus_scam.db.BasedeDatos_alumnos;
+import com.example.aplicacion_campus_scam.R;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 import com.journeyapps.barcodescanner.BarcodeEncoder;

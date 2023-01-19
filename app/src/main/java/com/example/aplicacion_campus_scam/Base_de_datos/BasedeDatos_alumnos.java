@@ -1,4 +1,4 @@
-package com.example.aplicacion_campus_scam.db;
+package com.example.aplicacion_campus_scam.Base_de_datos;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

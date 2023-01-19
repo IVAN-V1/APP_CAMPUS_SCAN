@@ -14,7 +14,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.aplicacion_campus_scam.R;
-import com.example.aplicacion_campus_scam.db.BASE_DE_DATOS_DE_REGISTROS;
+import com.example.aplicacion_campus_scam.Base_de_datos.BASE_DE_DATOS_DE_REGISTROS;
 
 import java.util.ArrayList;
 import java.util.List;

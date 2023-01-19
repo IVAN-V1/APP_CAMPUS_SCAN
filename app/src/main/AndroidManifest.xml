@@ -26,7 +26,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".generador_QR"
+            android:name=".Actividades.generador_QR"
             android:exported="false"
 
             >
@@ -35,21 +35,21 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".menu_QR"
+            android:name=".Actividades.menu_QR"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Menu_principal"
+            android:name=".Actividades.Menu_principal"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".PANTALLA_DE_INICIO"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

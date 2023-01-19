@@ -24,6 +24,9 @@
         app:itemIconSize="36dp"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/bottom_nav_menu"
+      app:itemTextColor="@color/white"
+android:background="@color/white"
+        app:itemIconTint="@color/black"
 
         />
 

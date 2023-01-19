@@ -1,7 +1,6 @@
 package com.example.aplicacion_campus_scam.FRAGMENTOS;
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
@@ -18,7 +17,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.aplicacion_campus_scam.R;
-import com.example.aplicacion_campus_scam.db.BASE_DE_DATOS_DE_REGISTROS;
+import com.example.aplicacion_campus_scam.Base_de_datos.BASE_DE_DATOS_DE_REGISTROS;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
@@ -40,6 +39,9 @@ public class Escaner extends Fragment {
     private ArrayAdapter<String> adapter;
 
 
+    private static final int REQUEST_CODE_QR_SCAN = 101;
+    private final String LOGTAG = "QRCScanner-PANTALLA_DE_INICIO";
+
     public Escaner() {
         // Required empty public constructor
     }
@@ -57,9 +59,6 @@ public class Escaner extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
-
     }
 
     @Override
@@ -71,6 +70,7 @@ public class Escaner extends Fragment {
         ESCANEADO =view.findViewById(R.id.RESULTADO_ESCANEAR);
 
          escan=view.findViewById(R.id.escanear);
+
 
 
         // para ESCANEAR
@@ -132,7 +132,6 @@ public class Escaner extends Fragment {
                 });
 
 
-
         escan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -148,6 +147,7 @@ public class Escaner extends Fragment {
                 options.setCaptureActivity(CaptureActivityPortraint.class);
                 barcodeLauncher.launch(options);
 
+
             }
         });
 
@@ -156,4 +156,4 @@ public class Escaner extends Fragment {
         return view;
     }
 
-}
+    }

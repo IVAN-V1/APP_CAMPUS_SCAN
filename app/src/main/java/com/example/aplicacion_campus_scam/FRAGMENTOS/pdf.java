@@ -17,7 +17,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.aplicacion_campus_scam.R;
-import com.example.aplicacion_campus_scam.db.BASE_DE_DATOS_DE_REGISTROS;
+import com.example.aplicacion_campus_scam.Base_de_datos.BASE_DE_DATOS_DE_REGISTROS;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Chunk;
 import com.itextpdf.text.Document;

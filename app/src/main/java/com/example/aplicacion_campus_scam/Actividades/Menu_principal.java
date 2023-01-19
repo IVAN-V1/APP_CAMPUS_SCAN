@@ -1,4 +1,4 @@
-package com.example.aplicacion_campus_scam;
+package com.example.aplicacion_campus_scam.Actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.aplicacion_campus_scam.FRAGMENTOS.funcion_de_fragmentos;
+import com.example.aplicacion_campus_scam.R;
 
 public class Menu_principal extends AppCompatActivity {
 

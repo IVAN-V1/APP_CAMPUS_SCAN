@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".generador_QR"
+    tools:context=".Actividades.generador_QR"
     android:background="@color/white"
 
     >

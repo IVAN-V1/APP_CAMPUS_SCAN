@@ -12,7 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
 
 
-
         //se implemento para la libreria
         maven {
             url 'https://jitpack.io'
