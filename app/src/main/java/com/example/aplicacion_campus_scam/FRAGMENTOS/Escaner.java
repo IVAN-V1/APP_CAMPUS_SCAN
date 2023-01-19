@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -33,7 +34,7 @@ public class Escaner extends Fragment {
 
     ListView listView;
 
-    ImageButton escan;
+    Button escan;
 
     private List<String> mlista = new ArrayList<>();
     private ArrayAdapter<String> adapter;
@@ -67,10 +68,8 @@ public class Escaner extends Fragment {
         // Inflate the layout for this fragment
        View view= inflater.inflate(R.layout.fragment_escaner, container, false);
 
-        ESCANEADO =view.findViewById(R.id.RESULTADO_ESCANEAR);
 
          escan=view.findViewById(R.id.escanear);
-
 
 
         // para ESCANEAR
@@ -81,15 +80,13 @@ public class Escaner extends Fragment {
                         Toast.makeText(getContext(),"CALCELADO", Toast.LENGTH_LONG).show();
 
                     } else {
-                        Toast.makeText(getContext(), "REGISTRO EXITOSO: " , Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "REGISTRO EXITOSO:" ,Toast.LENGTH_SHORT).show();
 
-                        ESCANEADO.setText(result.getContents());
+                        String escan=result.getContents().toString().toUpperCase();
 
 
                         try {
 
-
-                            String nom_ = ESCANEADO.getText().toString().toUpperCase();
 
 
                             // GUARDAR INFOMACION EN LA BASE DE DATOS
@@ -100,7 +97,7 @@ public class Escaner extends Fragment {
 
                             // DATOS A PASAR EN LA BASE DE DATOS
                             ContentValues registro = new ContentValues();
-                            registro.put("registros", nom_);
+                            registro.put("registros", escan);
 
 
                             //ISERTA A BASE DE DATOS
@@ -115,7 +112,7 @@ public class Escaner extends Fragment {
                             ESCANEADO.setText("");
 
 
-                            mlista.add(nom_);
+                            mlista.add(escan);
 
                             adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1, mlista);
                             listView.setAdapter(adapter);

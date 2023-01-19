@@ -20,14 +20,9 @@
         tools:targetApi="31">
         <activity
             android:name=".FRAGMENTOS.funcion_de_fragmentos"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Actividades.generador_QR"
             android:exported="false"
+
+            android:screenOrientation="portrait"
 
             >
             <meta-data
@@ -35,22 +30,39 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".Actividades.generador_QR"
+            android:exported="false"
+                    android:screenOrientation="portrait"
+            >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Actividades.menu_QR"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait"
+
+            >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Actividades.Menu_principal"
-            android:exported="false">
+            android:exported="false"
+
+            android:screenOrientation="portrait"
+            >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".PANTALLA_DE_INICIO"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

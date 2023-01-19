@@ -10,7 +10,7 @@ import com.example.aplicacion_campus_scam.Actividades.Menu_principal;
 
 public class PANTALLA_DE_INICIO extends AppCompatActivity {
 
-
+    // tiempo de que la pantalla
     private static int SPLASH_TIMER = 3000;
 
     @Override
@@ -22,6 +22,8 @@ public class PANTALLA_DE_INICIO extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                //cambiar de pantalla o activiades
+
                 Intent i = new Intent(PANTALLA_DE_INICIO.this, Menu_principal.class);
                 startActivity(i);
                 finish();

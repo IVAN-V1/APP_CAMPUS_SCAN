@@ -12,52 +12,38 @@
         android:layout_height="match_parent">
 
 
-        <com.google.android.material.textfield.TextInputLayout
-
-            android:id="@+id/textInputLayout"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/escanear"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="518dp"
+            android:layout_marginTop="631dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="23dp"
-            android:hint="RESULTADO DE ESCANEAR"
-            android:textColorHint="@color/black"
-            app:boxBackgroundColor="#E9F2FF"
-            app:boxStrokeColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/escanear"
+            android:layout_marginBottom="52dp"
+            android:text="Escanear"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:startIconDrawable="@drawable/login_persona"
-            app:startIconTint="@color/black">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/RESULTADO_ESCANEAR"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/assets_fonts_encodesansregular"
-                android:inputType="textPersonName"
-                android:textColor="@color/black" />
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <ImageButton
-            android:id="@+id/escanear"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="14dp"
-            android:background="@drawable/boton_escaner__333"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
             tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="187dp"
+            android:layout_marginBottom="404dp"
+            android:text="ESCANEA EL CODIGO "
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/escanear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
