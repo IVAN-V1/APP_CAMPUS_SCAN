@@ -21,6 +21,16 @@ LIBRERIA PARA CREAR ARCHIVOS PDF
 
 }   
   ``` 
+
+ LIBRERIA DE LOTTIE  
+  PAGINA DE GITHUB DE LOTTIE [https://github.com/airbnb/lottie-android#download).
+   ``` 
+ 
+  dependencies {
+   implementation 'com.airbnb.android:lottie:5.2.0'
+
+}  
+  ``` 
   
   
  ![CAMPUS_IMAGEN3](https://user-images.githubusercontent.com/110186923/213940476-7a6055c9-32ed-45a9-9dcd-a0e2c95b6bd0.jpg)
