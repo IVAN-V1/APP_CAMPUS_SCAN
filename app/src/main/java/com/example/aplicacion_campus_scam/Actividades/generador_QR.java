@@ -49,6 +49,7 @@ public class generador_QR extends AppCompatActivity {
             //MOSTRAR EL QR EN UN ELEMENTO IMAGENVIEW
             qr.setImageBitmap(bitmap);
 
+            //MOSTRAR MENSAJE 
             Toast.makeText(this, "QR GENERADO", Toast.LENGTH_SHORT).show();
 
         } catch (WriterException e) {
