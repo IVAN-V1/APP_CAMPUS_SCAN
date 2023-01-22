@@ -10,6 +10,10 @@ ANDROID STUDIO DOLPHIN | 2021.3.1 Patch 1
 
 PAGINA DEL DISEÑO [https://www.figma.com/community/file/1196740335016400516). 
 
+# DESCARGAR ANDROID STUDIO:
+PAGINA [https://developer.android.com/studio). 
+
+
 # LIBRERIA PARA CREAR CODIGO QR Y ESCANEAR
 
 ```
