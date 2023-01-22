@@ -23,7 +23,7 @@ public class generador_QR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generador_qr);
 
-
+         // COMPONENTE USADO PARA CREAR EL CODIGO QR
         qr = findViewById(R.id.imageView);
 
 
