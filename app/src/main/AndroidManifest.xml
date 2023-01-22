@@ -16,7 +16,7 @@
         android:hardwareAccelerated="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.APLICACION_CAMPUS_SCAM"
+        android:theme="@style/Theme.APLICACION_CAMPUS_SCAN"
         tools:targetApi="31">
         <activity
             android:name=".FRAGMENTOS.funcion_de_fragmentos"

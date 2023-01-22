@@ -21,9 +21,13 @@ public class BASE_DE_DATOS_DE_REGISTROS extends SQLiteOpenHelper {
 
     }
 
+
+
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
+        //METODO USADO PARA QUE SE BORRE LA VIEJA BASE  DE DATOS Y SE CREE UNA VERSION
         db.execSQL("DROP TABLE registros");
         db.execSQL("CREATE TABLE maestros (id INTEGER PRIMARY KEY AUTOINCREMENT, registros TEXT  )");
 

@@ -9,7 +9,6 @@
     >
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -22,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
-            android:hint="CARRERA"
+            android:hint="Carrera"
             android:textColorHint="@color/black"
             android:textSize="12px"
             app:boxBackgroundColor="#FFFFFF"
@@ -55,7 +54,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:hint="ASIGNATURA"
+            android:hint="Asignatura"
             android:textColorHint="@color/black"
             app:boxBackgroundColor="#FFFFFF"
             app:boxStrokeColor="@color/black"
@@ -70,8 +69,9 @@
                 android:id="@+id/completador_de_carreras"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="27px"
                 android:textColor="@color/black"
+                android:textSize="14dp"
+
                 />
 
 
@@ -89,7 +89,7 @@
             android:layout_marginEnd="32dp"
 
             android:layout_marginBottom="16dp"
-            android:hint="NOMBRE COMPLETO"
+            android:hint="Nombre Completo"
             android:textColorHint="@color/black"
             app:boxBackgroundColor="#FFFFFF"
             app:boxStrokeColor="@color/black"
@@ -108,7 +108,10 @@
                 android:inputType="textPersonName"
                 android:textColor="@color/black"
                 tools:layout_editor_absoluteX="35dp"
-                tools:layout_editor_absoluteY="420dp" />
+                tools:layout_editor_absoluteY="420dp"
+                android:textSize="14dp"
+
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -142,7 +145,7 @@
                 android:textColor="@color/black"
                 tools:layout_editor_absoluteX="35dp"
                 tools:layout_editor_absoluteY="420dp"
-
+                android:textSize="14dp"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -158,6 +161,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:hint="GRUPO"
+
             android:textColorHint="@color/black"
             app:boxBackgroundColor="#FFFFFF"
             app:boxStrokeColor="@color/black"
@@ -173,8 +177,9 @@
                 android:id="@+id/completador_de_GRUPO"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="27px"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
 

@@ -41,12 +41,14 @@ import java.util.Date;
 public class pdf extends Fragment {
 
 
+    //autocompletador de texto
     AutoCompleteTextView pdf_carrera;
 
     AutoCompleteTextView materias;
 
     AutoCompleteTextView de_grupos;
 
+    //Arreglos
     String [] carreras ={"TICS EN DESARROLLO DE SOFTWARE ", "TICS EN ENTORNOS VIRTUALES"
 
             , "DESARROLLO DE NEGOCIOS"
@@ -148,6 +150,7 @@ public class pdf extends Fragment {
 
 
 
+                //VALIDAR CAPOS VACIOS
 
                 if (campo_pdf.equals("")|| campo_car.equals("")||campo_mate.equals("") || campo_gro.equals("") ||campo_nom_pro.equals("")||campo_hora.equals("") ) {
 
@@ -159,9 +162,9 @@ public class pdf extends Fragment {
 
                     try {
 
-
-
+                        // CREA EL ARCHIVO PDF EN LA CARPETA DOCUMENTOS
                         File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS),
+                                //NOMBRE QUE LLEVARA EL PDF
                                 campo_pdf+".pdf");
 
                         //SI EL PDF YA EXISTE
@@ -175,7 +178,7 @@ public class pdf extends Fragment {
                             //SIRVE PAEA CREAR EL ARCHIVO PDF
                             FileOutputStream archivo = new FileOutputStream(file);
 
-
+                            //CREA EL DOCUMENTO PDF CON EL TAMAÑO A4
                             Document documento = new Document(PageSize.A4);
 
                             PdfWriter.getInstance(documento, archivo);
@@ -197,7 +200,7 @@ public class pdf extends Fragment {
 
 */
 
-                            // SIRVE PARA MOSTRAR UN  TITULO EN EL PDF
+                            // SIRVE PARA MOSTRAR LA CARRERA
                             Paragraph par1 = new Paragraph();
                             Font fontitulo = new Font(Font.FontFamily.HELVETICA, 20, Font.BOLD, BaseColor.BLACK);
                             par1.add(new Phrase("CARRERA :" + campo_car, fontitulo));
@@ -208,7 +211,7 @@ public class pdf extends Fragment {
 
 
 
-                            // SIRVE PARA MOSTRAR UN  TITULO EN EL PDF
+                            // SIRVE PARA MOSTRAR EL NOMBRE DE PROFESOR Y LA FECHA
                             Paragraph par3 = new Paragraph();
                             Font fontitu = new Font(Font.FontFamily.HELVETICA, 15, Font.BOLD, BaseColor.BLACK);
                             par3.add(new Phrase("REPORTE GENERADO POR EL PROFESOR : " + campo_nom_pro + " FECHA " + date, fontitu));
@@ -218,7 +221,7 @@ public class pdf extends Fragment {
                             documento.add(par3);
 
 
-                            // SIRVE PARA MOSTRAR UN  TITULO EN EL PDF
+                            // SIRVE PARA MOSTRAR EL TITULO
                             Paragraph par4 = new Paragraph();
                             Font fontitñ = new Font(Font.FontFamily.HELVETICA, 15, Font.BOLD, BaseColor.BLACK);
                             par4.add(new Phrase("GRUPO: " + campo_gro, fontitñ));
@@ -228,7 +231,7 @@ public class pdf extends Fragment {
                             documento.add(par4);
 
 
-                            // SIRVE PARA MOSTRAR UN  TITULO EN EL PDF
+                            // SIRVE PARA MOSTRAR EL HORARIO
                             Paragraph par5 = new Paragraph();
                             Font font = new Font(Font.FontFamily.HELVETICA, 15, Font.BOLD, BaseColor.BLACK);
                             par5.add(new Phrase("HORARIO: " + campo_hora, fontitñ));
@@ -258,7 +261,11 @@ public class pdf extends Fragment {
                             tabla.addCell(tex2);      //SE PUEDE COLOCAR LO QUE QUERAMOS
 
 
+                            //------------------------------------------------------------------------------
+
                             // BASE DE DATOS
+
+
                             BASE_DE_DATOS_DE_REGISTROS admin = new BASE_DE_DATOS_DE_REGISTROS(getContext(), "REGISTROS", null, 2);
                             SQLiteDatabase baseDeDatos = admin.getWritableDatabase();
 
@@ -288,6 +295,7 @@ public class pdf extends Fragment {
                             documento.add(tabla);
                             documento.close();
 
+                            //muestra mensaje de donde se creo el pdf
                             Toast.makeText(getContext(), "PDF CREADO EN"+file, Toast.LENGTH_SHORT).show();
 
 
